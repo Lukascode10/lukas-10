@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--Doctype simpre va al inicio ya que es la version-->
+
+<html lang="es">
+<!--html rodea todo y se le coloca el lenguage (es) para español y (en) para ingles-->
+
+    <head> <!--head es cabeza  (metadata - metadatos)es para los elementos detras de escena, el mas visible es el  titulo de la pagina-->
+        <title>App de perros 2</title>
+        <!--El elemento style dentro de head es para señalar todo lo que se quiera resaltar de color , en este caso todo lo que sea p-->
+        <STyle> 
+            p{
+                color: blue;
+            }
+
+            h2{
+                color: green;
+            }
+
+            
+        </STyle>
+    </head>
+    <body> <!--Cuerpo, muestra todo lo que hay en la estructura de la pagina-->
+        <main> <!--contenido principal-->
+
+            <!--h1 es para crear titulos y va de 1 para letra grande hasta 6 para letra pequeña-->
+            <!--Este es el style en linea para colorear el texto en solo una area especifica-->
+            <h1 style="color: blue;">App de perros</h1>
+            <h2>Imagenes de perros</h2>
+
+            <!--p es para crear parrafos-->
+            <p>Haz click aqui para ver <a href="https://www.google.com/search?q=imagenes+de+perros&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjBqsa-lOH0AhW2SzABHe7QBOMQ_AUoAXoECAEQAw&biw=1920&bih=937&dpr=1" target="_blank" rel="noopener noreferrer"> imagenes de perros</a></p>
+
+            <!--br es para realizar separaciones-->
+            <br>
+
+            
+            <h2>Indice</h2>
+
+            <!--a es para incluir enlaces internos o externos, en este caso lleva a un enlace interno el cual debe estar en id en otro lugar de la pagina e iniciar con # en esta area-->
+            <a href="#Parrafo-1">Parrafo 1</a>
+            <a href="#Parrafo-2">Parrafo 2</a>
+            <a href="#Parrafo-3">Parrafo 3</a>
+            <a href="#Parrafo-4">Parrafo 4</a>
+
+            <br>
+            <!-- a href para enlaces, img src para insertar fuente de imagen,target _blank para que abra en pestaña nueva, rel noopener noreferrer para evitar entrada de otras paginas y alt para colocar texto en caso de que no cargue la imagen-->
+            <a href="https://www.google.com/search?q=imagenes+de+perros&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjBqsa-lOH0AhW2SzABHe7QBOMQ_AUoAXoECAEQAw&biw=1920&bih=937&" target="_blank" rel="noopener noreferrer"><img src="Ejercicio 1/Imagenes de perros/Perritos.jpeg" alt="Lindos perritos"></a>
+            <br>
+            <a href="https://www.google.com/search?q=imagenes+de+perros&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjBqsa-lOH0AhW2SzABHe7QBOMQ_AUoAXoECAEQAw&biw=1920&bih=937&" target="_blank" rel="noopener noreferrer"><img src="Ejercicio 1/Imagenes de perros/perros 2.jpg" alt="Lindos peeritos"></a>
+            
+            <!--hr para insertar linea de separacion-->
+            <hr>
+
+            <br>
+
+            <!--form para crear formulario, action para llevar al documento requerido, input type tex para crear recuadro de texto, placeholder para crear ejemplo de texto y required para que el campo sea obligatorio-->
+            <form action="/index - repaso 1.html">
+                <input type="text" placeholder="URL de fotos de tus mascotas" required>
+                <button type="submit">enviar</button> <!--button type submit para crear boton de enviar-->
+            </form>
+
+            <br>
+            <p>Selecciona si tu mascota es buena o mala</p>
+            <!--input type radio para crear cuadros de seleccion, label para seleccionar tambien con el texto, id para identificar, value para darle valor, name para crear grupo y que sea de unica seleccion y checked para demarcar como ejemplo-->
+            <label for="Bueno"><input id="Bueno" type="radio" value="Bueno" name="Bueno-Malisimo" checked> Bueno</label>
+            <br>
+            <label for="Malo"><input id="Malo" type="radio" value="Malo" name="Bueno-Malisimo"> Malo</label>
+            <br>
+            <label for="Buenisimo"><input id="Buenisimo" type="radio" value="Buenisimo" name="Bueno-Malisimo"> Buenisimo</label>
+            <br>
+            <label for="Malisimo"><input id="Malisimo" type="radio" value="Malisimo" name="Bueno-Malisimo"> Malisimo</label>
+            <br>
+
+            <p>Selecciona las cosas que hace tu perro</p>
+            <!--imput type checkbox para crear listas de verificacion (colocar chulitos)-->
+            <label for="Juega"><input id="Juega" type="checkbox" value="Juega" name="Juega-Ladra" checked> Juega</label>
+            <br>
+            <label for="Corre"><input id="Corre" type="checkbox" value="Corre" name="Juega-Ladra"> Corre</label>
+            <br>
+            <label for="Baila"><input id="Baila" type="checkbox" value="Baila" name="Juega-Ladra"> Baila</label>
+            <br>
+            <label for="Pelea"><input id="Pelea" type="checkbox" value="Pelea" name="Juega-Ladra"> Pelea</label>
+            <br>
+            <label for="Ladra"><input id="Ladra" type="checkbox" value="Ladra" name="Juega-Ladra"> Ladra</label>
+            <br>
+
+
+            <!--div para contener por areas y dar formas o colores, trabaja con css-->
+            <div>
+                <!--listas no ordenadas (ul) y ordenadas (ol), ul para solo crear biñetas y ol par crear con numeros, li de listas,  em para colocar texto en cursiva, s para tachar texto y  strong para negrilla-->
+                <h3>Listas de perros</h3>
+
+                <em><p>Cosas que los perros <strong>aman</strong></p></em>
+                <ul>
+                    <Li>Correr</Li>
+                    <li>Jugar</li>
+                    <li>Ladrar</li>
+                </ul>
+                <br>
+                <em><p>Cosas que los perros <strong>odian</strong></p></em>
+                <ol>
+                    <li>Los truenos</li>
+                    <li>Veterinario</li>
+                    <s><li>Bañarse</li></s>
+                </ol>
+
+            </div>
+
+            <br>
+            <!--El titulo parrafo 1 esta con id para llevar a enlace interno-->
+            <h2 id="Parrafo-1">Parrafo 1</h2>
+
+            <p>El perro, ​​​ llamado perro doméstico o can, ​ y en algunos lugares coloquialmente llamado chucho, ​ tuso, ​ choco, ​ entre otros; es un mamífero carnívoro de la familia de los cánidos, que constituye una especie del género Canis.</p>
+            <br>
+            <h2 id="Parrafo-2">Parrafo 2</h2>
+            <p>Los perros son animales tremendamente fieles y cariñosos, desde luego se merecen ser el mejor amigo del hombre. Quien tenga un perro en su hogar entenderá perfectamente cada uno de los momentos que hay descritos en esta lista, y si aún no lo tienes, no te pierdas ninguno de ellos: necesitas saberlo todo.</p>
+            <br>
+            <h2 id="Parrafo-3">Parrafo 3</h2>
+            <p>Los perros nos proporcionan una sensación de bienestar emocional a través del amor incondicional que nos dan; por eso, son una gran compañía y consuelo para las personas que viven solas. Tener un perro puede ayudar a las personas a recuperarse de un trauma personal, como la pérdida de un ser querido.</p>
+
+            <h2 id="Parrafo-4">Parrafo 4</h2>
+            <p>Tu perro tiene 8 dones que te ayudarán a navegar tu despertar espiritual, estos son: Guardián Astral: ladra "a la nada", te despierta y te cuida por las noches. ... Guía Espiritual: revoluciona tu vida. Coach de Superación Personal: te reta constantemente con travesuras y conductas que te irritan o confunden.</p>
+
+        </main>
+
+        <footer> <!-- footer pie de pagina, small para que la letra sea pequeña y de resto se agrega a y demas para enlaces  -->
+           <small><p>Sin derechos de autor - <a href="https://www.google.com/" target="_blank" rel="noopener noreferrer"> Google.com</p></a></small>
+        </footer>
+    </body>
+</html>
